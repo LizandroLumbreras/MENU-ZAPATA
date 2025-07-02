@@ -16,11 +16,14 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
 
     h1 {
       margin-bottom: 30px;
       font-size: 28px;
+      z-index: 2;
     }
 
     .menu-container {
@@ -28,6 +31,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      z-index: 2;
     }
 
     .menu-button {
@@ -49,22 +53,32 @@
       color: white;
       transform: scale(1.05);
     }
+
+    .marca-agua {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.08;
+      z-index: 1;
+      max-width: 80%;
+      height: auto;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Marca de agua con el logo -->
+  <img src="logo_proveedora.png" alt="Logo La Proveedora" class="marca-agua">
+
   <h1>Menú Principal - ZAPATA</h1>
+
   <div class="menu-container">
     <button class="menu-button" onclick="window.location.href='https://licaptio.github.io/MENUADMONPROTEC25/INV%20ZAPATA/SALIDA%20ZAPATA.html'">
       Salida Zapata
     </button>
-
-    <!-- Puedes agregar más botones aquí si quieres -->
-    <!--
-    <button class="menu-button" onclick="window.location.href='URL-DE-OTRA-PAGINA.html'">
-      Otra Página
-    </button>
-    -->
+    <!-- Puedes agregar más botones aquí -->
   </div>
 
 </body>
