@@ -1,0 +1,16 @@
+{
+  "name": "Menú Proveedora Zapata",
+  "short_name": "Menú Zapata",
+  "start_url": "menu.html",
+  "display": "standalone",
+  "background_color": "#00416A",
+  "theme_color": "#00416A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo_proveedora.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
